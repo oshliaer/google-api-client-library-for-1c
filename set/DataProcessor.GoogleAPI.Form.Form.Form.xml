@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Форма обработки</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="Страницы" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<Page name="GoogleAPI" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Google API</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Google API</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GoogleAPIРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<UsualGroup name="PeopleAPI" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>People API</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>People API</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="PeopleAPIРасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<Button name="СообщитьМоиДанные" id="25">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СообщитьМоиДанные</CommandName>
+									<Parameter xsi:nil="true"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сообщить Мои Данные</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СообщитьМоиДанныеРасширеннаяПодсказка" id="26"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="SheetsAPI" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Sheets API</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Sheets API</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="SheetsAPIРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<InputField name="first" id="29">
+									<DataPath>first</DataPath>
+									<ContextMenu name="firstКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="firstРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="second" id="32">
+									<DataPath>second</DataPath>
+									<Width>5</Width>
+									<ContextMenu name="secondКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="secondРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<Button name="ДобавитьЗаписьВТаблицу" id="27">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ДобавитьЗаписьВТаблицу</CommandName>
+									<Parameter xsi:nil="true"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавить Запись В Таблицу</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДобавитьЗаписьВТаблицуРасширеннаяПодсказка" id="28"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Аутентификация" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аутентификация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аутентификация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="АутентификацияРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<Button name="ПерейтиПоАдресуЗапросаАутентификации" id="1">
+							<Type>Hyperlink</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.ПерейтиПоАдресуЗапросаАутентификации</CommandName>
+							<Parameter xsi:nil="true"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перейти По Адресу Запроса Аутентификации</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПерейтиПоАдресуЗапросаАутентификацииРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<Button name="ЗаписатьОтветЗапросаАутентификации" id="8">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ЗаписатьОтветЗапросаАутентификации</CommandName>
+							<Parameter xsi:nil="true"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Записать Ответ Запроса Аутентификации</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗаписатьОтветЗапросаАутентификацииРасширеннаяПодсказка" id="9"/>
+						</Button>
+						<HTMLDocumentField name="Ссылка" id="5">
+							<DataPath>Ссылка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="СсылкаКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="7"/>
+						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ПользовательскиеДанные" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользовательские данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользовательские данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПользовательскиеДанныеРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<InputField name="client_id_google" id="50">
+							<DataPath>Объект.client_id_google</DataPath>
+							<ContextMenu name="client_id_googleКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="client_id_googleРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<InputField name="client_secret_google" id="47">
+							<DataPath>Объект.client_secret_google</DataPath>
+							<ContextMenu name="client_secret_googleКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="client_secret_googleРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<LabelField name="access_token_google" id="13">
+							<DataPath>Объект.access_token_google</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="access_token_googleКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="access_token_googleРасширеннаяПодсказка" id="15"/>
+						</LabelField>
+						<LabelField name="refresh_token_google" id="16">
+							<DataPath>Объект.refresh_token_google</DataPath>
+							<ContextMenu name="refresh_token_googleКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="refresh_token_googleРасширеннаяПодсказка" id="18"/>
+						</LabelField>
+						<LabelField name="expires_in_google" id="19">
+							<DataPath>Объект.expires_in_google</DataPath>
+							<ContextMenu name="expires_in_googleКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="expires_in_googleРасширеннаяПодсказка" id="21"/>
+						</LabelField>
+						<LabelField name="token_type_google" id="22">
+							<DataPath>Объект.token_type_google</DataPath>
+							<ContextMenu name="token_type_googleКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="token_type_googleРасширеннаяПодсказка" id="24"/>
+						</LabelField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.GoogleAPI</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.client_secret_google</Field>
+				<Field>Объект.client_id_google</Field>
+				<Field>Объект.refresh_token_google</Field>
+				<Field>Объект.expires_in_google</Field>
+				<Field>Объект.token_type_google</Field>
+				<Field>Объект.access_token_google</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Ссылка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="first" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>First</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="second" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Second</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПерейтиПоАдресуЗапросаАутентификации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПерейтиПоАдресуЗапросаАутентификации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти по адресу запроса аутентификации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиПоАдресуЗапросаАутентификации</Action>
+		</Command>
+		<Command name="ЗаписатьОтветЗапросаАутентификации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗаписатьОтветЗапросаАутентификации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать ответ запроса аутентификации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьОтветЗапросаАутентификации</Action>
+		</Command>
+		<Command name="СообщитьМоиДанные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщить мои данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщить мои данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СообщитьМоиДанные</Action>
+		</Command>
+		<Command name="ДобавитьЗаписьВТаблицу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить запись в таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить запись в таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЗаписьВТаблицу</Action>
+		</Command>
+	</Commands>
+</Form>
